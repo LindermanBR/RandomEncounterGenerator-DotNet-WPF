@@ -1,0 +1,35 @@
+﻿<Window x:Class="RandomEncounterGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RandomEncounterGenerator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Gerador de Encontros" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"
+                       HorizontalAlignment="Center"/>
+            <Label Content="Tipo do Encontro" Margin="0" Padding="0"/>
+            <ComboBox Name="cmbTipoEncontro"/>
+            <Label Content="Oponente" Margin="0" Padding="0"/>
+            <ComboBox Name="cmbOponente" />
+            <Label Content="Objetivo" Margin="0" Padding="0"/>
+            <ComboBox Name="cmbObjetivo"/>
+            <Label Content="Localidade" Margin="0" Padding="0"/>
+            <ComboBox Name="cmbLocalidade"/>
+            <Label Content="Clima 1" Margin="0" Padding="0"/>
+            <ComboBox Name="cmbClima1"/>
+            <Label Content="Clima 2" Margin="0" Padding="0"/>
+            <ComboBox Name="cmbClima2"/>
+
+            <Button Content="Gerar" Click="Button_Click" Margin="0,10,0,0"/>
+
+            <CheckBox Name="chkAleatorio" Content="Aleatório" Margin="0,10,0,0"/>
+            
+            <TextBox Name="txtResultado" IsReadOnly="True" Margin="0,10,0,0" TextWrapping="NoWrap"/>
+
+        </StackPanel>
+    </Grid>
+
+</Window>
